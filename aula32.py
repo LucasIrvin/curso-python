@@ -21,20 +21,34 @@ descrito, exiba a saudação apropriada. Ex.
 Bom dia 0-11, Boa tarde 12-17 e Boa noite 18-23.
 """
 
-try:
-    hora = input('Que horas são? ')
-    hora_int = int(hora)
-except:
-    print('Digite um número inteiro!')
+# try:
+#     hora = input('Que horas são? ')
+#     hora_int = int(hora)
+# except:
+#     print('Digite um número inteiro!')
 
-if hora_int >= 0 and hora_int <= 11: 
-    print('Bom dia')
-elif hora_int >= 12 and hora_int <= 17:
-    print('Boa tarde')
-elif hora_int >= 18 and hora_int <= 23:
-    print('Boa noite')
+# if hora_int >= 0 and hora_int <= 11: 
+#     print('Bom dia')
+# elif hora_int >= 12 and hora_int <= 17:
+#     print('Boa tarde')
+# elif hora_int >= 18 and hora_int <= 23:
+#     print('Boa noite')
+# else:
+#     print('Esse horário não existe')
+
+"""
+Faça um programa que peça o primeiro nome do usuário. Se o nome tiver 4 letras ou 
+menos escreva "Seu nome é curto"; se tiver entre 5 e 6 letras, escreva 
+"Seu nome é normal"; maior que 6 escreva "Seu nome é muito grande". 
+"""
+
+nome = input('Escreva seu primeiro nome: ')
+
+if len(nome) <= 4:
+    print('Seu nome é curto')
+
+elif len(nome) >= 5 and len(nome) <= 6:
+    print('Seu nome é normal')
+
 else:
-    print('Esse horário não existe')
-
-
-
+    print('Seu nome é muito grande')
