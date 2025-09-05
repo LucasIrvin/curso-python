@@ -18,7 +18,7 @@ lista = [10, 20, 30, 40]
 # print(lista[2])
 
 lista.append(50)
-# O Pop remove o ultimo objeto da lista.
+# O Pop remove e puxa o ultimo objeto da lista.
 lista.pop()
 lista.append(60)
 lista.append(70)
