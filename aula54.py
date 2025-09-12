@@ -7,11 +7,12 @@ Exiba os índices da lista
 2 Luiz
 """
 
-lista = ['Maria', 'Lucas', 'Helena', 'Luiz', 'Fernanda']
-lista.append('Irvin')
-indices = 0
+lista = ['Maria', 'Helena', 'Luiz']
+lista.append('João')
 
-for nome in lista:
-    print(indices, nome)
-    indices += 1
+
+indices = range(len(lista))
+
+for indice in indices:
+    print(indice, lista[indice], type(lista[indice]))
 
